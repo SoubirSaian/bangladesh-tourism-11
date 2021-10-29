@@ -1,0 +1,21 @@
+
+
+.navigation-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation-bar ul{
+    display: flex;
+
+}
+
+.navigation-bar ul li{
+    list-style-type: none;
+}
+
+.navigation-bar ul li a{
+    text-decoration: none;
+    padding: 3px 6px;
+}

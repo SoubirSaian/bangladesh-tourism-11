@@ -1,0 +1,26 @@
+
+
+.tourist-spot{
+    box-shadow: 3px 3px 9px grey;
+    border-radius: 9px;
+}
+
+.spot-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.spot-detail img{
+    width: 100%;
+}
+
+ /* responsive media query for small screen */
+@media only screen and (max-width: 688px) {
+    .spot-detail{
+        display: flex;
+        flex-direction: column;
+    }
+}
