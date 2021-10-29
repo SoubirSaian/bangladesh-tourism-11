@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./TouristSpot.css";
 
 
@@ -18,8 +19,8 @@ const TouristSpot = (props) => {
                     
                     <h5 className="text-success">{location}</h5>
                     <p>{description.slice(0,300)}</p>
-                    <button className="btn btn-outline-primary m-3">Choose</button>
-                    <button className="btn btn-outline-success m-3">Details</button>
+                    <Link to={`/placeorder/${id}`}> <button className="btn btn-outline-primary m-3">Book this packege</button></Link>
+                    {/* <button className="btn btn-outline-success m-3">Details</button> */}
                 </div>
             </div>
         </div>
