@@ -19,11 +19,11 @@ const PlaceDetails = (props) => {
         const data = {
             userEmail,userName,address,name,location
         }
-        console.log(data);
+        // console.log(data);
             //  user information sending to mongodb 
         axios.post('http://localhost:5000/myOrder',data)
             .then(res =>{
-                console.log(res);
+                // console.log(res);
                 if(res.data.insertedId){
                     window.alert("order placed successfully");
                 }

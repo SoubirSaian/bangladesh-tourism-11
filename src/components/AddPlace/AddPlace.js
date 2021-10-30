@@ -5,12 +5,19 @@ import './AddPlace.css';
 
     //    add place component 
 const AddPlace = () => {
+    //    using react-hook-form
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => {
-        console.log(data)
 
-        axios.post('http://localhost:5000/',data)
-        .then()
+    const onSubmit = data => {
+        console.log(data);
+                // sending a new place info to database
+        axios.post('http://localhost:5000/places',data)
+        .then(res => {
+            console.log(res);
+            if(res.data.insertedId){
+                window.alert("A new place added successfully");
+            }
+        })
     };
 
     return (
