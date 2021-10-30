@@ -7,13 +7,13 @@ import "./TouristSpot.css";
 const TouristSpot = (props) => {
     // console.log(props.place);
     //   destructuring props 
-    const {description,highlights,id,img,location,name} = props.place;
+    const {description,id,img,location,name} = props.place;
     return (
         <div className="col-12 m-4 tourist-spot">
             <h3 className="text-center text-primary pt-3">{name}</h3>
             <div className="spot-detail">
                 <div className="ps-5">
-                    <img src={img} />
+                    <img src={img} alt=""/>
                 </div>
                 <div className="p-5">
                     

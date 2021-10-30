@@ -22,8 +22,9 @@ const Header = () => {
             
             <ul>
                 <li><Link to="/home">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/myorder">My Order</Link></li>
+                <li><Link to="/manageorder">Manage Order</Link></li>
                 <li><Link to="/addplace">Add Place</Link></li>
                 <li><Link to="register">Register</Link></li>
                 <span>{emailName}</span>

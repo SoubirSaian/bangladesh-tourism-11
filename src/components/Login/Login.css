@@ -1,8 +1,18 @@
 
 
-.login-page{
+.login-page form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.login-page form input{
+    width: 40%;
+    margin: 5px;
+}
+
+.login-page button{
+    width: 100%;
+    margin: 15px;
 }

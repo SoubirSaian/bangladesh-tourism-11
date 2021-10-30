@@ -1,42 +1,47 @@
 import React from 'react';
-import { useRef } from 'react';
+import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
     //   using auth context 
-    const {signInUsingGoogle} = useAuth();
+    const {signInUsingGoogle,inputPasswordHandler,inputEmailHandler,logInUsingEmailAndPassword} = useAuth();
 
-    const passRef = useRef();
-    const emailRef = useRef();
+     const location = useLocation();
+     const history = useHistory();
+     const redirect_uri = location.state?.from || '/home';
 
-    // console.log(user);
-    // get email and password from user 
-    const handleLogIn = (event)=>{
-        const password = passRef.current.value;
-        const email = emailRef.current.value;
+     const handleGoogleLogIn = () => {
+        signInUsingGoogle()
+        .then((result) => {
+            history.push(redirect_uri);
+        });
+    }
 
-        console.log(password,email);
-        
-        emailRef.current.value = '';
-        passRef.current.value = '';
-        event.preventDefault();
+    const handleEmailPasswordLogin = (e) => {
+         
+        logInUsingEmailAndPassword(e)
+       
+             history.push(redirect_uri);
+       
     }
 
     return (
         <div className="login-page">
-            <h2>Log In </h2>
-            <form onSubmit={handleLogIn}>
+            <h2 className="text-center">Log In </h2>
+            <form onSubmit={handleEmailPasswordLogin}>
                 
-                <input type="email" name="email" ref={emailRef} />
+                <input type="email" name="email" onBlur={inputEmailHandler} />
                 <br />
-                <input type="password" name="password" ref={passRef} />
+                <input type="password" name="password" onBlur={inputPasswordHandler} />
                 <br />
                 <input type="submit" value="Log In" />
             </form>
-            <button onClick={signInUsingGoogle}>Google Sign in</button>
-            <h6>if you are a new user, go to register page <Link to="/register">Registeration page</Link></h6>
+
+            <button className="btn btn-outline-danger" onClick={handleGoogleLogIn}>Google Sign in</button>
+
+            <h6 className="text-center">if you are a new user, go to register page <Link to="/register">Registeration page</Link></h6>
         </div>
     );
 };

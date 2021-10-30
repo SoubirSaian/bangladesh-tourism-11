@@ -1,0 +1,13 @@
+
+
+.add-place form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-place form input,textarea{
+    margin: 7px;
+    width: 40%;
+}
