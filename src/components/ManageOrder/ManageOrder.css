@@ -1,0 +1,13 @@
+
+
+.manage-order{
+    /* height: 500px; */
+    margin-top: 60px;
+    margin-bottom: 200px;
+}
+
+.manage-order h2{
+    margin-bottom: 25px;
+    padding: 15px;
+    border-bottom: 2px  dashed rgb(223, 39, 39);
+}

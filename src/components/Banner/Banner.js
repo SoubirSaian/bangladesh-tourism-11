@@ -10,7 +10,7 @@ import banner5 from "../../images/banner-img/banner-5.jpg";
 
 const Banner = () => {
     return (
-        <div>
+        <div className="banner-slider">
              <Carousel>
                 <Carousel.Item interval={1000}>
                     <img
@@ -19,8 +19,8 @@ const Banner = () => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>Sreemangal Tee State</h3>
+                    <p>Lot of heals and tea state with natural scenic view</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={500}>
@@ -30,8 +30,8 @@ const Banner = () => {
                     alt="Second slide"
                     />
                     <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Ratargul swamp forest</h3>
+                    <p> an attractive tourist destination in bangladesh </p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -41,30 +41,30 @@ const Banner = () => {
                     alt="Third slide"
                     />
                     <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>Sundarbans</h3>
+                    <p>World's largest mangrove forest</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
                     src={banner4}
-                    alt="Third slide"
+                    alt="Fourth slide"
                     />
                     <Carousel.Caption>
-                    <h3>Fourth slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>Jaflong river</h3>
+                    <p>a river with transparent water</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
                     src={banner5}
-                    alt="Third slide"
+                    alt="fifth slide"
                     />
                     <Carousel.Caption>
-                    <h3>Fifth slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>Saint Martin</h3>
+                    <p>An attractive remote island from the coast</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

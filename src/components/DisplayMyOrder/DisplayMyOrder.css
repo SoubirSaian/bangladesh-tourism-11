@@ -1,0 +1,16 @@
+
+
+ 
+.display-my-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 8px grey;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 25px;
+}
+.display-my-order h4,h5,h6{
+    margin: 15px;
+    /* border-right: 1px solid black; */
+}

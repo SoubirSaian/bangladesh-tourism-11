@@ -12,7 +12,7 @@ const Register = () => {
     return (
         <div className="register-page">
 
-            <h2 className="text-center">complete registration for better experience</h2>
+            <h2 className="text-center">complete <span className="text-danger mb-4">registration</span> for better experience</h2>
 
             <form onSubmit={emailPasswordSignInHandler}>
 
@@ -20,7 +20,7 @@ const Register = () => {
                 <br />
                 <input type="password" name="password" onBlur={inputPasswordHandler} placeholder="enter your password"/>
                 <br />
-                <input type="submit" value="Register" />
+                <input type="submit" className="btn btn-outline-danger p-2" value="Register" />
 
                 <span className="text-danger">{error}</span>
             </form>

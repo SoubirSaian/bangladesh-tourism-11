@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100px;
+    background-color:  #f0f0f5;
 }
 
 .navigation-bar ul{
@@ -13,9 +15,27 @@
 
 .navigation-bar ul li{
     list-style-type: none;
+    /* padding-top: 7px; */
 }
 
 .navigation-bar ul li a{
     text-decoration: none;
+    color: green;
+    font-size: 20px;
+    /* font-weight: 700; */
     padding: 3px 6px;
+}
+
+.navigation-bar ul li a:hover{
+    background-color: white;
+}
+
+
+/* responsive ness  */
+
+@media only screen and (max-width : 768) {
+    .navigation-bar{
+        display: flex;
+        flex-direction: column;
+    }
 }

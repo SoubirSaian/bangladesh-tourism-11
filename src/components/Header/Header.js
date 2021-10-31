@@ -8,7 +8,6 @@ import './Header.css';
 const Header = () => {
         //  using auth context 
     const {user,logOut} = useAuth();
-    console.log(user);
     
             // display only name paart of an emmail 
     const email = user.email;
@@ -23,9 +22,9 @@ const Header = () => {
             <ul>
                 <li><Link to="/home">Home</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/myorder">My Order</Link></li>
-                <li><Link to="/manageorder">Manage Order</Link></li>
-                <li><Link to="/addplace">Add Place</Link></li>
+                {user?.email && <li><Link to="/myorder">My Order</Link></li>}
+                {user?.email && <li><Link to="/manageorder">Manage Order</Link></li>}
+                {user?.email && <li><Link to="/addplace">Add Place</Link></li>}
                 <li><Link to="register">Register</Link></li>
                 <span>{emailName}</span>
 

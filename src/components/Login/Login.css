@@ -1,18 +1,24 @@
 
-
+.login-page{
+    margin: 50px;
+}
 .login-page form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px 0px;
+    padding: 50px;
+    background-color: rgb(206, 185, 247);
 }
 
 .login-page form input{
     width: 40%;
-    margin: 5px;
+    padding: 5px;
+    /* margin: 5px; */
 }
 
 .login-page button{
-    width: 100%;
-    margin: 15px;
+    width: 80%;
+    margin: 5px 50px;
 }

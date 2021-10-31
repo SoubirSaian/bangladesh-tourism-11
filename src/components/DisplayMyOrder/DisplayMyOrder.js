@@ -3,16 +3,20 @@ import './DisplayMyOrder.css';
      
     //   display myorder component 
 const DisplayMyOrder = (props) => {
-    // console.log(props.children);
-    const {userName,name} = props.myOrder;
+    // console.log(props.myOrder);
+    const {address,name,userEmail,userName} = props.myOrder;
     // const {button} = props.children;
      
 
     return (
-        <div>
-            <h2>{userName}</h2>
-            <h4>{name}</h4>
+        <div className="display-my-order">
+            
+            <h4 className="text-primary">{name}</h4>
+            <h5 className="text-success">{userName}</h5>
+            <h6 className="text-danger">{userEmail}</h6>
+            <h6>{address}</h6>
             {props.children}
+        
         </div>
     );
 };

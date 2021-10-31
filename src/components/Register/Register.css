@@ -1,14 +1,20 @@
 
-
+.register-page {
+    margin: 50px;
+}
 .register-page form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px 0px;
+    margin: 50px 0px;
+    padding: 50px;
+    background-color: rgb(236, 230, 230);
+    /* border: 1px solid red; */
 }
 
 .register-page form input{
     width: 40%;
-    margin: 6px 0px;
+    /* margin: 5px 0px; */
+    padding: 3px 0px;
 }

@@ -11,7 +11,7 @@ const PlaceOrder = () => {
     const [places,setPlaces] = useState([]);
 
     useEffect(()=>{
-        fetch('/tourSpot.json')
+        fetch('https://macabre-nightmare-78794.herokuapp.com/places')
             .then(res => res.json())
             .then(data => setPlaces(data));
     },[]);
@@ -21,12 +21,9 @@ const PlaceOrder = () => {
 
     return (
         <div>
-            <h3>id : {placeId}</h3>
-            <div>
-                {
-                  oneplace &&  <PlaceDetails key={oneplace.id} place={oneplace} ></PlaceDetails>
-                }
-            </div>
+            {
+              oneplace &&  <PlaceDetails key={oneplace.id} place={oneplace} ></PlaceDetails>
+            }
         </div>
     );
 };

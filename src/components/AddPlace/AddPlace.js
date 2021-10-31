@@ -11,7 +11,7 @@ const AddPlace = () => {
     const onSubmit = data => {
         console.log(data);
                 // sending a new place info to database
-        axios.post('http://localhost:5000/places',data)
+        axios.post('https://macabre-nightmare-78794.herokuapp.com/places',data)
         .then(res => {
             console.log(res);
             if(res.data.insertedId){

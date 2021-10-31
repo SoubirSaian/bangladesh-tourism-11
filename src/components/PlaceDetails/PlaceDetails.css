@@ -1,0 +1,24 @@
+
+
+.place-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.place-details img{
+    width: 100%;
+    padding: 60px;
+}
+
+.add-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-info form input{
+    width: 225px;
+    margin: 10px 0px;
+}

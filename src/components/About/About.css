@@ -1,0 +1,17 @@
+
+.about-page{
+    box-shadow: 3px 3px 9px green;
+    padding: 20px 50px;
+}
+.about-page h3{
+    border-bottom: 2px dashed green;
+}
+
+/* responsive ness  */
+
+@media  only screen and (max-width: 768px) {
+    .about-page .list{
+        display: flex;
+        flex-direction: column;
+    }
+}

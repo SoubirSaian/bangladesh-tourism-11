@@ -13,7 +13,7 @@ const MyOrder = () => {
     
             // fetching my order data from database 
     useEffect( ()=>{
-        fetch('http://localhost:5000/myOrder')
+        fetch('https://macabre-nightmare-78794.herokuapp.com/myOrder')
             .then(res => res.json())
             .then(data => setAllOrders(data));
     },[]);
@@ -24,7 +24,7 @@ const MyOrder = () => {
     
         const proceed = window.confirm('would you like to delete');
         if(proceed){
-            const url = `http://localhost:5000/myOrder/${id}`
+            const url = `https://macabre-nightmare-78794.herokuapp.com/myOrder/${id}`
 
             fetch(url,{method : 'DELETE'})
                 .then(res => res.json())
@@ -43,10 +43,11 @@ const MyOrder = () => {
     
 
     return (
-        <div>
+        <div className="my-order">
+            <h2 className="text-success text-center">all of your orders</h2>
             {
                 myOrders.map(myOrder => <DisplayMyOrder key={myOrder._id} myOrder={myOrder}>
-                    <button onClick={()=> handleDelete(myOrder._id)}>delete</button>
+                    <button className="btn btn-outline-danger" onClick={()=> handleDelete(myOrder._id)}>delete</button>
                 </DisplayMyOrder>)
             }
         </div>
