@@ -21,7 +21,7 @@ const Header = () => {
             
             <ul>
                 <li><Link to="/home">Home</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                {/* <li><Link to="/contact">Contact</Link></li> */}
                 {user?.email && <li><Link to="/myorder">My Order</Link></li>}
                 {user?.email && <li><Link to="/manageorder">Manage Order</Link></li>}
                 {user?.email && <li><Link to="/addplace">Add Place</Link></li>}

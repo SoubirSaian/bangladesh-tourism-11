@@ -15,14 +15,14 @@ const PlaceOrder = () => {
             .then(res => res.json())
             .then(data => setPlaces(data));
     },[]);
-    console.log(places);
-    const oneplace = places.find(place => place.id === parseInt(placeId));
+    // console.log(places);
+    const oneplace = places.find(place => place._id === placeId);
     // console.log(oneplace)
 
     return (
         <div>
             {
-              oneplace &&  <PlaceDetails key={oneplace.id} place={oneplace} ></PlaceDetails>
+              oneplace &&  <PlaceDetails key={oneplace._id} place={oneplace} ></PlaceDetails>
             }
         </div>
     );

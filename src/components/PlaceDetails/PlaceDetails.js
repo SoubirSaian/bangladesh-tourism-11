@@ -21,7 +21,7 @@ const PlaceDetails = (props) => {
         }
         // console.log(data);
             //  user information sending to mongodb 
-        axios.post('http://localhost:5000/myOrder',data)
+        axios.post('https://macabre-nightmare-78794.herokuapp.com/myOrder',data)
             .then(res =>{
                 // console.log(res);
                 if(res.data.insertedId){

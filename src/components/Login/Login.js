@@ -37,7 +37,7 @@ const Login = () => {
                 <br />
                 <input type="password" name="password" onBlur={inputPasswordHandler} placeholder="enter password"/>
                 <br />
-                <input type="submit" className="btn btn-outline-warning p-2" value="Log In" />
+                <input type="submit" className="btn btn-warning p-2" value="Log In" />
             </form>
 
             <button className="btn btn-outline-danger fw-5 p-2" onClick={handleGoogleLogIn}>Google Sign in</button>

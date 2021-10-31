@@ -21,7 +21,7 @@ const Places = () => {
             <h3 className="text-center mb-4 text-success">Our famous destination</h3>
             <div className="row">
                 {
-                    tourPlaces.map(place => <TouristSpot key={place.id} place={place}></TouristSpot>)
+                    tourPlaces.map(place => <TouristSpot key={place._id} place={place}></TouristSpot>)
                 }
             </div>
         </div>

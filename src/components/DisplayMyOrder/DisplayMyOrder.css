@@ -14,3 +14,12 @@
     margin: 15px;
     /* border-right: 1px solid black; */
 }
+
+
+/* responsivness  */
+@media only screen and (max-width : 768px) {
+    .display-my-order{
+        display: flex;
+        flex-direction: column;
+    }
+}

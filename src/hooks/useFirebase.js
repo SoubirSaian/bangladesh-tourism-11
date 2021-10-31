@@ -59,13 +59,13 @@ const useFirebase = () =>{
 
             // user password handler 
     const inputPasswordHandler = (event) =>{
-         console.log(event.target.value);
+        //  console.log(event.target.value);
         setPassword(event.target.value);
          
     };
                 //  user email handler 
     const inputEmailHandler =(event)=>{
-         console.log()
+        //  console.log()
         setEmail(event.target.value);
          
     };
